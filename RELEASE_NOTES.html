@@ -20,15 +20,15 @@
    -->
 <html>
 <head>
-  <title>Apache UIMA v2.11.0 Release Notes</title>
+  <title>Apache UIMA v2.11.1 Release Notes</title>
 </head>
 <body>
-<h1>Apache UIMA (Unstructured Information Management Architecture) v2.11.0 Release Notes</h1>
+<h1>Apache UIMA (Unstructured Information Management Architecture) v2.11.1 Release Notes</h1>
 
 <h2>Contents</h2>
 <p>
 <a href="#what.is.uima">What is UIMA?</a><br/>
-<a href="#major.changes">Major Changes in this Release</a><br/>
+<a href="#major.changes">List of Changes in this Release</a><br/>
 <a href="#get.involved">How to Get Involved</a><br/>
 <a href="#report.issues">How to Report Issues</a><br/>
 <a href="#list.issues">List of JIRA Issues Fixed in this Release</a><br/>
@@ -79,19 +79,14 @@
 				for Perl, Python and TCL.
 			</p>
 
-<h2><a id="major.changes">Major Changes in this Release</a></h2>
-<p>The major changes in this release include:</p>
+<h2><a id="major.changes">List of Changes in this Release</a></h2>
+<p>The changes in this release include:</p>
 
 <ul>
-  <li>Added ability to serialize as XMIs as XML 1.1</li>
-  <li>Added typed parameter support to PEARs</li>
-  <li>Improved speed of constructing aggregate engines</li>
-  <li>Fixed deep cloning of AnalysisEngineDescription</li>
-  <li>Fixed bug causing Annotation to be returned when asking JCas for a specific type</li>
-  <li>Fixed ability to install PEARs into directories containing XML special characters in the name</li>
-  <li>Fixed index protection for cases that no FSes were indexed</li>
-  <li>No longer ship Pack200-compressed versions of the Eclipse plugins</li>
+  <li>Update file handling code to address <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-32287">CVE-2022-32287</a></li>
 </ul>
+
+<p>Please note this is a bugfix release only. Users are recommended to migrate to <a href="https://github.com/apache/uima-uimaj">UIMA v3</a></p>
   
 <h2><a id="list.issues">Full list of JIRA Issues Fixed in this Release</a></h2>
 Click <a href="issuesFixed/jira-report.html">issuesFixed/jira-report.hmtl</a> for the list of 
